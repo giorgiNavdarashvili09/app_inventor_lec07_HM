@@ -15,10 +15,18 @@ ListView_ში ელემენტის არჩევისას უნ�
 
 ფილმები აპლიკაციის ჩატვირთვისას უკვე უნდა ჩანდეს ჩვენს აპლიკაციაში. ამიტომ გამოვიყენებთ Initialize ბლოკს სადაც movies სიაში დავამატებთ
 ჩვენთვის სასურველი რაოდენობის ელემენტებს. ბოლოს კი listView_ს Elements პარამეტრად მივუთითებთ ჩვენს მიერ შექმნილ ცვლადს "movies".
-ბოლოს კი გამოვიყენებთ AfterPicking და SelectionIndex ბლოკებს ListView ბლოკების ჩამონატვლიდან. ასევე დაგვჭირდება open Another Screen with start value ბლოკი.
+ბოლოს კი გამოვიყენებთ AfterPicking და SelectionIndex ბლოკებს ListView ბლოკების ჩამონათვლიდან. ასევე დაგვჭირდება open Another Screen with start value ბლოკი.
 
 SelectionIndex ბლოკი დაგვიბრუნებს ListView_ში არჩეულ ელემენტს, რომელიც არის Dictionary ტიპის.
 Dictionary სიის მსგავსი მონაცემის ტიპია რომელიც ელემენტებს ინახავს წყვილებად.
+მაგალითად ListView_ში პირველ ფილმზე დაჭერისას გვიბრუნდება:
+{
+    "Text1":"Mission Impossible",
+    "Text2":"Ethan Hunt and his IMF team must track down a dangerous weapon before it falls into the wrong hands.",
+    "Image":"missionImpossible.jpg"
+}
+
+
 
 ## მეორე ეკრანი
 მეორე ეკრანზე გვაქვს სურათის და ორი ტექსტის(Label) კომპონენტი
